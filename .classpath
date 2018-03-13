@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/JIEUN/Downloads/TTS_library_stub_3.0_market.jar"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="C:/Users/JIEUN/Downloads/Weather_v6/bin/dexedLibs/android-support-v4-5d753059012510cceb549386d7132e31.jar"/>
+	<classpathentry kind="lib" path="C:/Users/JIEUN/Downloads/Weather_v6/bin/dexedLibs/GoogleAdMobAdsSdk-6.4.1-cc8726afd74a077e92a3cd295bd2f318.jar"/>
+	<classpathentry kind="src" path="/KYscholbus"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

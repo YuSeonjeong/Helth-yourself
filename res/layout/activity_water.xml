@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:padding="20dp"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@+id/alarm"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/layout_border"
+        android:text="알림설정"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="오늘의 물 섭취량"
+        android:textSize="25dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignLeft="@+id/data"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="10dp"
+        android:background="#C5DFE2" >
+
+        <ImageView
+            android:id="@+id/bar"
+            android:layout_width="230dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="26dp"
+            android:src="@drawable/bar" />
+
+        <TextView
+            android:id="@+id/watertext"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_alignTop="@+id/minuse"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="0/8"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:id="@+id/minuse"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/bar"
+            android:layout_alignLeft="@+id/bar"
+            android:layout_marginBottom="11dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/minuseon" />
+
+        <ImageView
+            android:id="@+id/pluse"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignRight="@+id/bar"
+            android:layout_alignTop="@+id/watertext"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/pluseon" />
+
+        <!--
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="23dp"
+            android:layout_above="@+id/imageView2"
+            android:layout_alignLeft="@+id/imageView2"
+            android:src="@drawable/cupwater"
+             android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="120dp"
+            android:layout_height="23dp"
+            android:layout_above="@+id/imageView3"
+            android:layout_alignLeft="@+id/imageView3"
+            android:src="@drawable/cupwater" 
+             android:visibility="invisible"/>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="120dp"
+            android:layout_height="23dp"
+            android:layout_above="@+id/imageView4"
+            android:layout_alignLeft="@+id/imageView4"
+            android:src="@drawable/cupwater"
+             android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="120dp"
+            android:layout_height="23dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/cupwater"
+             android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+             android:layout_width="120dp"
+            android:layout_height="23dp"
+         android:layout_above="@+id/imageView6"
+            android:layout_alignLeft="@+id/imageView6"
+            android:src="@drawable/cupwater"
+             android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="120dp"
+            android:layout_height="23dp"
+            android:layout_above="@+id/imageView7"
+            android:layout_alignLeft="@+id/imageView7"
+            android:src="@drawable/cupwater"
+             android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="120dp"
+            android:layout_height="23dp"
+            android:layout_above="@+id/imageView8"
+            android:layout_alignLeft="@+id/imageView8"
+            android:src="@drawable/cupwater"
+             android:visibility="invisible" />
+        -->
+
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="sss"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="140dp"
+            android:layout_height="220dp"
+            android:layout_above="@+id/bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="39dp"
+            android:src="@drawable/cup" />
+
+        <RelativeLayout
+            android:id="@+id/pictureLayout"
+            android:layout_width="120dp"
+            android:layout_height="200dp"
+            android:layout_alignBottom="@+id/imageView1"
+             android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true" >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="110dp"
+                android:layout_height="23dp"
+                android:layout_alignParentBottom="true"
+               
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/cupwater"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

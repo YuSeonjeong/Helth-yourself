@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:padding="20dp"
+    android:gravity="top"
+    
+    tools:context="${relativePackage}.${activityClass}" >
+    <RelativeLayout
+        android:id="@+id/warking"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="430dp"
+        android:background="#C5DFE2" >
+
+        <TextView
+            android:id="@+id/today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+             android:textSize="25dp"
+              />
+
+        <TextView
+            android:id="@+id/step_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/today"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+         
+            android:textSize="120dp" />
+
+        <TextView
+            android:id="@+id/distance_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/step_value"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:text="이동거리."
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/calories_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/distance_value"
+            android:layout_centerHorizontal="true"
+            android:text="소모한 칼로리"
+            android:textSize="25dp" />
+
+      </RelativeLayout>
+   
+
+
+ <RelativeLayout
+        android:id="@+id/weather"
+        android:layout_width="80dp"
+        android:layout_height="130dp"
+        android:background="@drawable/layout_border"
+        android:layout_alignLeft="@+id/warking"
+        android:layout_below="@+id/warking" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/btn1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="날씨확인"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/exercise"
+        android:layout_width="80dp"
+       android:layout_height="130dp"
+        android:layout_alignTop="@+id/weather"
+        android:layout_toRightOf="@+id/weather"
+        android:background="@drawable/layout_border" >
+
+        <ImageView
+            android:id="@+id/imageView2"
+             android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/btn4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="운동하기"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/water"
+        android:layout_width="80dp"
+        android:layout_height="130dp"
+        android:layout_alignRight="@+id/warking"
+        android:layout_alignTop="@+id/exercise"
+        android:background="@drawable/layout_border" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+             android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/btn3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="물섭취량"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bmi"
+        android:layout_width="80dp"
+        android:layout_height="130dp"
+        android:layout_alignTop="@+id/exercise"
+        android:layout_toRightOf="@+id/exercise"
+        android:background="@drawable/layout_border" >
+
+        <ImageView
+            android:id="@+id/imageView3"
+             android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/btn2" />
+
+        <TextView
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="BMI"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

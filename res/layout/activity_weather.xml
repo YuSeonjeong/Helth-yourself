@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+   
+     android:orientation="vertical"
+       android:padding="20dp"
+    tools:context="${relativePackage}.${activityClass}" >
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+     >
+    <Spinner
+        android:id="@+id/sidospinner"
+        android:layout_width="107dp"
+        android:layout_height="40dp"
+        android:prompt="@string/sido"
+        android:textSize="12dp"
+        
+        />
+    <Spinner
+        android:id="@+id/gugunspinner"
+        android:layout_width="107dp"
+        android:layout_height="40dp"
+        android:prompt="@string/gugun"
+        android:textSize="12dp"
+       />
+    <Spinner
+        android:id="@+id/dongspinner"
+        android:layout_width="107dp"
+        android:layout_height="40dp"
+        android:prompt="@string/dong"
+        android:textSize="12dp"
+       />
+    </LinearLayout>
+    
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+     >
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:id="@+id/getBtn"
+        android:textSize="15dp"
+        android:text="선택위치 날씨"/>
+
+    <Button
+        android:id="@+id/gpsBtn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="현위치 날씨" />
+    
+    </LinearLayout>
+    
+    
+    
+    
+    
+<TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+       android:textSize="10dp"
+        android:text="" />
+
+<ListView
+    android:id="@+id/listView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"  android:background="#Ffffff"
+    android:padding="10dp"
+    android:gravity="center"
+    >
+
+</ListView>
+
+
+</LinearLayout>
